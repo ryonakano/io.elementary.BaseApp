@@ -68,8 +68,8 @@ modules:
       - -Dpalettes=false
     sources:
       - type: archive
-        url: https://github.com/elementary/icons/archive/5.3.1.tar.gz
-        sha256: 67b349453f8990e399521bb8d96f4caf4c23a27cf22cbc18ddacf0e817c59e12
+        url: https://github.com/elementary/icons/archive/8.0.0.tar.gz
+        sha256: 2b607c52ec85ef9f683eb28739756d0db942fb5f4c214f4f2fbc768fc6377a1d
     modules:
       - name: xcursorgen
         cleanup:
