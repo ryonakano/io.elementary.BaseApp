@@ -45,6 +45,32 @@ modules:
         url: https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
         sha256: 1bf834f5e10d60cc6124d74ed3c1dd38da646787fbf7872220b8b4068e476d4d
 
+  - name: sassc
+    cleanup:
+      - '*'
+    buildsystem: autotools
+    sources:
+      - type: archive
+        url: https://github.com/sass/sassc/archive/3.6.2.tar.gz
+        sha256: 608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03
+      - type: script
+        dest-filename: autogen.sh
+        commands:
+          - autoreconf -si
+    modules:
+      - name: libsass
+        cleanup:
+          - '*'
+        buildsystem: autotools
+        sources:
+          - type: archive
+            url: https://github.com/sass/libsass/archive/3.6.5.tar.gz
+            sha256: 89d8f2c46ae2b1b826b58ce7dde966a176bac41975b82e84ad46b01a55080582
+          - type: script
+            dest-filename: autogen.sh
+            commands:
+              - autoreconf -si
+
   - name: granite
     buildsystem: meson
     cleanup:
@@ -59,8 +85,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://github.com/elementary/stylesheet/archive/5.4.2.tar.gz
-        sha256: 3bc37723daf4ce0b7c9ce4c125ef0055affe8d6654981388ec87d4a23a1ae0ec
+        url: https://github.com/elementary/stylesheet/archive/8.1.0.tar.gz
+        sha256: 9a23f2e7a25993da5d9356e2840c6ce1c9a7c837a024a5a0cc5e3844df6c7901
 
   - name: elementary-icons
     buildsystem: meson
