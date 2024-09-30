@@ -76,5 +76,5 @@ modules:
           - '*'
         sources:
           - type: archive
-            url: https://gitlab.freedesktop.org/xorg/app/xcursorgen/-/archive/xcursorgen-1.0.7/xcursorgen-xcursorgen-1.0.7.tar.gz
-            sha256: 7fb30a052b63e3ed02c9e43bd70fe1bf8189f2f3d702ab43b5b0726a2dbafccd
+            url: https://gitlab.freedesktop.org/xorg/app/xcursorgen/-/archive/xcursorgen-1.0.8/xcursorgen-xcursorgen-1.0.8.tar.gz
+            sha256: 390204bd72ab722e42c8a09f0a6e918a964ad8cefee02148d771c9be11e533e1
