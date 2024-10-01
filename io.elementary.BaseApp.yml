@@ -2,7 +2,7 @@ id: io.elementary.BaseApp
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
 runtime-version: '23.08'
-branch: juno-23.08
+branch: circe-23.08
 separate-locales: false
 cleanup:
   - /cache
