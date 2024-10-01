@@ -33,8 +33,8 @@ modules:
       - --enable-unversioned
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/vala/0.48/vala-0.48.14.tar.xz
-        sha256: dca57de29f4ce18ee8c6b1e4f1b37ca3843d19dae5c455fceebccc5ae3ffe347
+        url: https://download.gnome.org/sources/vala/0.56/vala-0.56.17.tar.xz
+        sha256: 26100c4e4ef0049c619275f140d97cf565883d00c7543c82bcce5a426934ed6a
 
   - name: libgee
     make-install-args:
